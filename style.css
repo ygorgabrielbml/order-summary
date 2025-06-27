@@ -1,0 +1,152 @@
+/* =============================
+   1. Fontes e Reset Global
+============================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* =============================
+   2. Estrutura Global
+============================= */
+body {
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    width: 400px;
+    height: 625px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================
+   3. Imagem do topo
+============================= */
+.img-header {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =============================
+   4. Texto principal
+============================= */
+.text-box {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.text-card {
+    margin: 0 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+/* =============================
+   5. Bloco de informações
+============================= */
+.info-box {
+    margin: 30px;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.info-left{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.p-price {
+    padding: 5px;
+    color: hsl(223, 47%, 23%);
+}
+
+/* Botão "Change" */
+.info-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.info-box button:hover {
+    color: #786cf4;
+    text-decoration: none;
+}
+
+/* =============================
+   6. Botões principais
+============================= */
+.buttons-box {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Botão roxo */
+.button-purple {
+    background-color: hsl(245, 75%, 52%);
+    width: 330px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: hsl(225, 100%, 94%);
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0px 8px 16px hsl(245, 75%, 52%, 0.4);
+;
+
+}
+
+.button-purple:hover {
+    background-color: #786cf4;
+}
+
+/* Botão branco (cancelar) */
+.button-white {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.button-white:hover {
+    color: hsl(223, 47%, 23%);
+}
